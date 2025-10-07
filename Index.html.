@@ -1,0 +1,451 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VANGORA — Social Video + Audit Services</title>
+  <meta name="description" content="VANGORA — AI-powered video marketing, TikTok & Instagram audits, and website design services." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://vangoraaudit.com" />
+
+  <!-- Social cards -->
+  <meta property="og:title" content="VANGORA — Social Video + Audit Services">
+  <meta property="og:description" content="AI-powered video marketing, TikTok & Instagram audits, and website design services.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vangoraaudit.com">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#4B5563;
+      --muted:#6B7280;
+      --line:#D1D5DB;
+      --bronze:#cd7f32;
+      --silver:#8F96A3;
+      --gold:#FFD700;
+      --focus:#6366F1;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0B0F14; --text:#D5DBE5; --muted:#A3ADC2; --line:#263041; }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    img{max-width:100%;height:auto;display:block;margin-inline:auto}
+    a{color:inherit;text-decoration:none}
+    a,button,input,textarea,select{outline:none}
+    a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{
+      box-shadow:0 0 0 3px color-mix(in oklab, var(--focus) 35%, transparent);
+      border-color:var(--focus)
+    }
+    .container{max-width:1120px;margin-inline:auto;padding:24px}
+    .grid{display:grid;gap:24px}
+    @media(min-width:768px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+    header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:10;backdrop-filter:saturate(140%) blur(6px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .nav a{padding:12px 14px;border-radius:10px}
+    .nav a:hover,button:hover{background:color-mix(in oklab, var(--line) 25%, transparent)}
+    .brand img{height:50px;vertical-align:middle}
+
+    .hero{padding:72px 0;border-bottom:1px solid var(--line)}
+    .hero-inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px}
+    .logo{width:min(420px,80vw)}
+    h1{margin:0;font-size:clamp(28px,3.5vw,40px);letter-spacing:.06em;color:var(--muted)}
+
+    .hero-ctas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+    .btn{padding:12px 18px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--text);cursor:pointer;transition:transform .06s ease, background .2s ease}
+    .btn:active{transform:translateY(1px)}
+    .summary-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--text)}
+    details[open] .summary-btn{background:color-mix(in oklab, var(--line) 15%, transparent)}
+
+    section{padding:56px 0}
+    h2{margin:0 0 18px;font-size:clamp(22px,3vw,28px);color:var(--muted)}
+    section[id]{scroll-margin-top:90px}
+
+    .card{border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--bg);transition:background 0.25s ease}
+    .card:hover{background:color-mix(in oklab, var(--line) 15%, transparent)}
+
+    form{display:grid;gap:14px;max-width:640px}
+    label{display:block}
+    input,textarea,select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text)}
+    input[type="file"]{padding:8px}
+    fieldset{border:1px solid var(--line);border-radius:12px;padding:12px}
+    legend{padding:0 6px;color:var(--muted);font-weight:600}
+    details{margin-top:16px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+    summary{cursor:pointer;font-weight:bold;color:var(--muted);padding:14px 16px;list-style:none}
+    details[open] summary{border-bottom:1px solid var(--line)}
+
+    .tier{font-weight:700}
+    .bronze-text{color:var(--bronze)}
+    .silver-text{color:var(--silver)}
+    .gold-text{color:var(--gold)}
+    .muted{font-size:14px;color:var(--muted)}
+
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-align:center}
+    .footer-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:8px}
+    .tiny{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand" aria-label="Brand">
+        <!-- Embedded logo (your purple VANGORA mark) -->
+        <img alt="VANGORA logo" src="data:image/jpeg;base64,/9j/4QEIRXhpZgAATU0AKgAAAAgABgESAAMAAAABAAEAAAEaAAUAAAABAAAAVgEbAAUAAAABAAAAXgEoAAQAAAABAAAOAQEyAAIAAAAUAAAAZodpAAQAAAABAAABJAAAAABQaG90b3Nob3AgMjIuMSAoTWFjaW50b3NoKQAA/9sAQwACAgICAgICAwICAgQDAQMEBQQEBAQHBgYGBgcICQgKCQgICQoMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/9sAQwECAwMDBAQEBAQMDBAMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABmB9gDASIAAhEBAxEB/8QAHQAAAQQDAQEAAAAAAAAAAAAABQYBAgQHAwgJCP/EAEkQAAEDAgMEBAMGAwYFBQAAAAECAwQFEQYSITETQVEHImFxgZEyQqGx0RQjUsHRYnKSorLwFVNzgpPSJENTc7PD0v/EABoBAQEBAQEBAQAAAAAAAAAAAAABAgMEBQb/xAApEQEBAAICAgICAgMBAAAAAAAAAQIRAxIhMQQTQSIUURRxIzJhcaH/2gAMAwEAAhEDEQA/AL9Y8b8x3XoYJ0ZkKxVdG2QW3N4jQZs3tZc6B1w2qf1bV6A9dW3F+ZP0P2h8mW1O3B9rJ6b9R6tJvU9iVb2S3e7bJ7qgC0zO9dR2Hq3d2c9q9iQmM8e6x8sC6W8ZQe1ap2QJHn0J9QKZyXGq6KJHcV0i6h4k2r2sQ7X2bqA8/0q0Zo1p5p2m2Xo9mPzc7k8m0m3bJfHcT6nUp2l9H0V0hQb9bZyK1+W9m9uN1Kq7WZKX1prgN4iY8wD0o2uZ7qkQq4rJ4yqUe9m4uV7+uM8Q1o7GZ2m3m9G9o0m0m0yqkblmZtJf6S6qkU1m3r3Xb5k6o7lF4b4Y3s8HqV7k4ZrK7oZ3Jzl4zq8q8r5ZK1mR//Z" />
+      </div>
+      <nav aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#social">TikTok Audits</a>
+        <a href="#instagram">Instagram Audits</a>
+        <a href="#website">Websites</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <img class="logo" alt="VANGORA logo large" src="data:image/jpeg;base64,/9j/4QEIRXhpZgAATU0AKgAAAAgABgESAAMAAAABAAEAAAEaAAUAAAABAAAAVgEbAAUAAAABAAAAXgEoAAQAAAABAAAOAQEyAAIAAAAUAAAAZodpAAQAAAABAAABJAAAAABQaG90b3Nob3AgMjIuMSAoTWFjaW50b3NoKQAA/9sAQwACAgICAgICAwICAgQDAQMEBQQEBAQHBgYGBgcICQgKCQgICQoMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/9sAQwECAwMDBAQEBAQMDBAMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABmB9gDASIAAhEBAxEB/8QAHQAAAQQDAQEAAAAAAAAAAAAABQYBAgQHAwgJCP/EAEkQAAEDAgMEBAMGAwYFBQAAAAECAwQFEQYSITETQVEHImFxgZEyQqGx0RQjUsHRYnKSorLwFVNzgpPSJENTc7PD0v/EABoBAQEBAQEBAQAAAAAAAAAAAAABAgMEBQb/xAApEQEBAAICAgICAgMBAAAAAAAAAQIRAxIhMQQTQSIUURRxIzJhcaH/2gAMAwEAAhEDEQA/AL9Y8b8x3XoYJ0ZkKxVdG2QW3N4jQZs3tZc6B1w2qf1bV6A9dW3F+ZP0P2h8mW1O3B9rJ6b9R6tJvU9iVb2S3e7bJ7qgC0zO9dR2Hq3d2c9q9iQmM8e6x8sC6W8ZQe1ap2QJHn0J9QKZyXGq6KJHcV0i6h4k2r2sQ7X2bqA8/0q0Zo1p5p2m2Xo9mPzc7k8m0m3bJfHcT6nUp2l9H0V0hQb9bZyK1+W9m9uN1Kq7WZKX1prgN4iY8wD0o2uZ7qkQq4rJ4yqUe9m4uV7+uM8Q1o7GZ2m3m9G9o0m0m0yqkblmZtJf6S6qkU1m3r3Xb5k6o7lF4b4Y3s8HqV7k4ZrK7oZ3Jzl4zq8q8r5ZK1mR//Z" />
+      <h1>AI-powered video marketing • TikTok & Instagram audits • website design</h1>
+
+      <div class="hero-ctas">
+        <a href="#instagram"><button class="btn" type="button">Get an Instagram Audit</button></a>
+        <details>
+          <summary class="summary-btn">Book Free Consultation</summary>
+          <div style="padding:16px;max-width:720px;margin-inline:auto;text-align:left">
+            <!-- No backend needed: opens user’s email client -->
+            <form action="mailto:vangora511@gmail.com" method="POST" enctype="text/plain">
+              <input type="hidden" name="_subject" value="VANGORA — Free Consultation Request" />
+              <label><input type="text" name="name" placeholder="Your name (required)" required /></label>
+              <label><input type="email" name="email" placeholder="Your email (required)" required /></label>
+              <label><input type="tel" name="phone" placeholder="Phone (optional)" /></label>
+              <label>
+                <select name="preferredContact">
+                  <option value="">Preferred contact method (optional)</option>
+                  <option>Email</option><option>Phone</option><option>Text</option>
+                </select>
+              </label>
+              <label><input type="text" name="preferredTime" placeholder="Preferred call time (optional)" /></label>
+              <label><textarea name="message" rows="4" placeholder="What would you like help with?" required></textarea></label>
+              <button class="btn" type="submit">Send Consultation Request</button>
+            </form>
+            <p class="muted" style="margin-top:8px">This sends directly to <strong>vangora511@gmail.com</strong>. We’ll reply within 24 hours.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <h2>Select a Service</h2>
+      <div class="grid grid-3">
+
+        <!-- Video Marketing -->
+        <div id="video" class="card" aria-labelledby="video-title">
+          <strong id="video-title">🎬 Video Marketing & Editing</strong>
+          <p>Upload your video(s)/images and describe what you want edited or improved. If you want multiple videos molded together, upload all of them with a description — include details like smooth transitions, captions, voice-over, and music preferences. <strong>Price is based on scope and complexity.</strong></p>
+          <p><strong>Payment is discussed during your <em>FREE</em> consultation. We’ll reply within 24 hours.</strong></p>
+          <details>
+            <summary>Start a Video Project (click to open)</summary>
+            <div style="padding:16px">
+              <form action="mailto:vangora511@gmail.com" method="POST" enctype="text/plain" data-open-payment="true">
+                <input type="hidden" name="_subject" value="New Video Project Request">
+                <label><input autocomplete="email" type="email" name="clientEmail" placeholder="Your email (required)" required /></label>
+                <label>Upload list/links to videos/images in your message below</label>
+                <label><textarea name="description" rows="4" placeholder="Describe the edit: trimming, transitions, captions, music, references, deadline (required)" required></textarea></label>
+                <label><input autocomplete="name" type="text" name="clientName" placeholder="Your name (required)" required /></label>
+                <label><input autocomplete="tel" type="tel" name="clientPhone" placeholder="Phone (optional)" /></label>
+                <button class="btn" type="submit">✉️ Send for Editing</button>
+              </form>
+              <p class="muted">Need to upload large files? After contacting us, we’ll provide a secure upload link.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- TikTok Audit -->
+        <div id="social" class="card">
+          <strong>📱 TikTok Account Audit</strong>
+          <p>Choose your package and fill out the details. We’ll review your profile, content, and insights — then deliver a clear plan to improve reach, engagement, and conversions. ✅ We’ll tell you which videos to remove and what to publish to gain traction and followers.</p>
+
+          <details>
+            <summary><span class="tier bronze-text">Starter — $75</span></summary>
+            <div style="padding:16px">
+              <ul>
+                <li>Profile & bio optimization</li>
+                <li>Brand consistency check</li>
+                <li>Top 10 video performance analysis</li>
+                <li>Engagement rate breakdown</li>
+                <li>Advice on videos hurting your image or reach</li>
+                <li>5 tailored improvement tips</li>
+              </ul>
+              <form action="mailto:vangora511@gmail.com" method="POST" enctype="text/plain" data-open-payment="true">
+                <input type="hidden" name="_subject" value="TikTok Audit — Starter $75">
+                <label><input type="text" name="handle" placeholder="TikTok Handle @*" required></label>
+                <label><input type="text" name="type" placeholder="Account Type (Creator / Business / Personal)*" required></label>
+                <label><input type="text" name="goal" placeholder="Main Goal (Growth / Sales / Awareness / Community)*" required></label>
+                <label><input type="text" name="competitors" placeholder="Competitor pages (optional)" /></label>
+                <label><textarea name="notes" placeholder="Notes or special requests (optional)"></textarea></label>
+                <button class="btn" type="submit">📤 Send Starter Audit</button>
+              </form>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="tier silver-text">Professional — $150</span></summary>
+            <div style="padding:16px">
+              <ul>
+                <li>Full profile & bio SEO review</li>
+                <li>30-video performance analysis</li>
+                <li>Engagement trends & hashtag audit</li>
+                <li>Competitor benchmarking (2–3 accounts)</li>
+                <li>30-day content plan with posting strategy</li>
+                <li>Image reputation report</li>
+              </ul>
+              <form action="mailto:vangora511@gmail.com" method="POST" enctype="text/plain" data-open-payment="true">
+                <input type="hidden" name="_subject" value="TikTok Audit — Professional $150">
+                <label><input type="text" name="handle" placeholder="TikTok Handle @*" required></label>
+                <label><input type="text" name="type" placeholder="Account Type (Creator / Business / Brand)*" required></label>
+                <label><input type="text" name="goal" placeholder="Main Goal*" required></label>
+                <label><input type="text" name="competitors" placeholder="Competitors (up to 3)" /></label>
+                <label><input type="text" name="style" placeholder="Preferred content style or color scheme" /></label>
+                <button class="btn" type="submit">📤 Send Professional Audit</button>
+              </form>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="tier gold-text">Premium — $350</span></summary>
+            <div style="padding:16px">
+              <ul>
+                <li>Deep-dive analytics (90 days)</li>
+                <li>Growth & engagement funnel report</li>
+                <li>Retention analysis</li>
+                <li>Hashtag, caption & CTA optimization</li>
+                <li>90-day growth roadmap + KPI dashboard</li>
+                <li>Reputation cleanup + optional 1:1 strategy call</li>
+              </ul>
+              <form action="mailto:vangora511@gmail.com" method="POST" enctype="text/plain" data-open-payment="true">
+                <input type="hidden" name="_subject" value="TikTok Audit — Premium $350">
+                <label><input type="text" name="handle" placeholder="TikTok Handle @*" required></label>
+                <label><input type="text" name="type" placeholder="Account Type*" required></label>
+                <label><input type="text" name="objective" placeholder="Main Objective (Conversions / Leads / Branding)*" required /></label>
+                <label><input type="text" name="audience" placeholder="Audience (Age, Region, Niche) (optional)" /></label>
+                <label><textarea name="notes" placeholder="Notes or analytics links"></textarea></label>
+                <button class="btn" type="submit">📤 Send Premium Audit</button>
+              </form>
+            </div>
+          </details>
+
+          <p><strong>How It Works</strong></p>
+          <ol>
+            <li>Choose your audit package above.</li>
+            <li>Share your info and goals.</li>
+            <li>We will contact you within 24 hours after receiving payment.</li>
+            <li>You will receive your full audit report within 1–5 business days.</li>
+          </ol>
+        </div>
+
+        <!-- Instagram Audit -->
+        <div id="instagram" class="card">
+          <strong>📸 Instagram Account Audit</strong>
+          <p>Choose your package and fill out the details. We’ll review your profile, content, and insights — then deliver a clear plan to improve reach, engagement, and conversions. ✅ We’ll tell you which posts to remove and what to publish to gain traction and followers.</p>
+
+          <details>
+            <summary><span class="tier bronze-text">Starter — $75</span></summary>
+            <div style="padding:16px">
+              <ul>
+                <li>Profile & bio optimization</li><li>Brand consistency check</li>
+                <li>Top 10 post analysis</li><li>Engagement rate breakdown</li>
+                <li>Advice on image-damaging posts</li><li>5 tailored improvement tips</li>
+              </ul>
+              <form action="mailto:vangora511@gmail.com" method="POST" enctype="text/plain" data-open-payment="true">
+                <input type="hidden" name="_subject" value="Instagram Audit — Starter $75">
+                <label><input type="text" name="handle" placeholder="Instagram Handle @*" required></label>
+                <label><input type="text" name="type" placeholder="Account Type (Creator / Business / Personal)*" required></label>
+                <label><input type="text" name="goal" placeholder="Main Goal (Growth / Sales / Awareness / Community)*" required></label>
+                <label><input type="text" name="competitors" placeholder="Competitor pages (optional)" /></label>
+                <label><textarea name="notes" placeholder="Notes or special requests (optional)"></textarea></label>
+                <button class="btn" type="submit">📤 Send Starter Audit</button>
+              </form>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="tier silver-text">Professional — $150</span></summary>
+            <div style="padding:16px">
+              <ul>
+                <li>Full profile & bio SEO review</li>
+                <li>30-post performance (Reels, Stories, Posts)</li>
+                <li>Engagement trends & hashtag audit</li>
+                <li>Competitor benchmarking (2–3)</li>
+                <li>30-day content plan with posting strategy</li>
+                <li>Image reputation report</li>
+              </ul>
+              <form action="mailto:vangora511@gmail.com" method="POST" enctype="text/plain" data-open-payment="true">
+                <input type="hidden" name="_subject" value="Instagram Audit — Professional $150">
+                <label><input type="text" name="handle" placeholder="Instagram Handle @*" required></label>
+                <label><input type="text" name="type" placeholder="Account Type (Creator / Business / Brand)*" required></label>
+                <label><input type="text" name="goal" placeholder="Main Goal*" required></label>
+                <label><input type="text" name="competitors" placeholder="Competitors (up to 3)" /></label>
+                <label><input type="text" name="style" placeholder="Preferred content style or color scheme" /></label>
+                <button class="btn" type="submit">📤 Send Professional Audit</button>
+              </form>
+            </div>
+          </details>
+
+          <details>
+            <summary><span class="tier gold-text">Premium — $350</span></summary>
+            <div style="padding:16px">
+              <ul>
+                <li>Deep-dive analytics (90 days)</li>
+                <li>Growth & engagement funnel report</li>
+                <li>Story & Reel retention analysis</li>
+                <li>Hashtag, caption & CTA optimization</li>
+                <li>90-day growth roadmap + KPI dashboard</li>
+                <li>Reputation cleanup + optional 1:1 strategy call</li>
+              </ul>
+              <form action="mailto:vangora511@gmail.com" method="POST" enctype="text/plain" data-open-payment="true">
+                <input type="hidden" name="_subject" value="Instagram Audit — Premium $350">
+                <label><input type="text" name="handle" placeholder="Instagram Handle @*" required></label>
+                <label><input type="text" name="type" placeholder="Account Type*" required></label>
+                <label><input type="text" name="objective" placeholder="Main Objective (Conversions / Leads / Branding)*" required /></label>
+                <label><input type="text" name="audience" placeholder="Audience (Age, Region, Niche) (optional)" /></label>
+                <label><textarea name="notes" placeholder="Notes or analytics links"></textarea></label>
+                <button class="btn" type="submit">📤 Send Premium Audit</button>
+              </form>
+            </div>
+          </details>
+
+          <p><strong>How It Works</strong></p>
+          <ol>
+            <li>Choose your audit package above.</li>
+            <li>Share your info and goals.</li>
+            <li>We will contact you within 24 hours after receiving payment.</li>
+            <li>You will receive your full audit report within 1–5 business days.</li>
+          </ol>
+        </div>
+
+        <!-- Website Building -->
+        <div id="website" class="card">
+          <strong>💻 Website Building</strong>
+          <p>Choose your package and fill out details. We’ll confirm everything in a FREE consultation before starting.</p>
+          <form action="mailto:vangora511@gmail.com" method="POST" enctype="text/plain" data-open-payment="true">
+            <details>
+              <summary><span class="tier bronze-text">Starter — $300–$600</span></summary>
+              <div style="padding:16px">
+                <p>1–3 pages (Home, About, Contact), mobile-friendly, basic SEO.</p>
+                <textarea name="starterDetails" rows="4" placeholder="Purpose, audience, style preferences"></textarea>
+                <label><input type="text" name="starterColors" placeholder="Preferred colors (e.g., baby blue, white, metallic silver)" /></label>
+                <label><input type="text" name="starterPages" placeholder="Pages (e.g., Home, About, Contact)" /></label>
+              </div>
+            </details>
+            <details>
+              <summary><span class="tier silver-text">Professional — $800–$1,500</span></summary>
+              <div style="padding:16px">
+                <p>4–7 pages, branding support, contact form, social links, advanced SEO, custom layout.</p>
+                <textarea name="proDetails" rows="4" placeholder="Purpose, color theme, layout ideas"></textarea>
+                <label><input type="text" name="proPages" placeholder="Pages (e.g., Home, Services, About, Contact, Blog)" /></label>
+              </div>
+            </details>
+            <details>
+              <summary><span class="tier gold-text">Business / E-commerce — $2,000–$3,500</span></summary>
+              <div style="padding:16px">
+                <p>Up to 10 pages, payments, product/booking system, analytics.</p>
+                <textarea name="ecomDetails" rows="4" placeholder="Store/booking info, catalog size, payment needs"></textarea>
+                <label><input type="text" name="ecomProducts" placeholder="# of products/services (estimate)" /></label>
+              </div>
+            </details>
+            <details>
+              <summary><strong>Premium Custom — $4,000–$6,000+</strong></summary>
+              <div style="padding:16px">
+                <p>Full custom layout, animations, blog, advanced SEO, business email, automations.</p>
+                <textarea name="premiumDetails" rows="4" placeholder="Advanced features, design inspirations, automations"></textarea>
+              </div>
+            </details>
+            <label><input autocomplete="email" type="email" name="clientEmail" placeholder="Your email (required)" required /></label>
+            <label><input autocomplete="name" type="text" name="clientName" placeholder="Your name (required)" required /></label>
+            <label><input autocomplete="tel" type="tel" name="clientPhone" placeholder="Phone (optional)" /></label>
+            <label><input type="text" name="deadline" placeholder="Deadline or preferred timeline (optional)" /></label>
+            <label><input type="text" name="budget" placeholder="Budget range (optional)" /></label>
+            <button class="btn" type="submit">🧩 Submit Website Request</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="mailto:vangora511@gmail.com" method="POST" enctype="text/plain">
+        <input type="hidden" name="_subject" value="VANGORA — New Contact">
+        <label><input autocomplete="name" type="text" name="name" placeholder="Name*" required /></label>
+        <label><input autocomplete="email" type="email" name="email" placeholder="Email*" required /></label>
+        <label><input autocomplete="tel" type="tel" name="phone" placeholder="Phone (optional)" /></label>
+        <label><textarea name="message" rows="5" placeholder="Tell us about your project or service interest*" required></textarea></label>
+        <button class="btn" type="submit">Send</button>
+      </form>
+      <p class="muted" style="margin-top:8px">Or email us directly: <a href="mailto:vangora511@gmail.com">vangora511@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      © 2025 VANGORA · All Rights Reserved
+      <div class="footer-links">
+        <a class="tiny" href="#privacy">Privacy</a>
+        <a class="tiny" href="#terms">Terms</a>
+        <a class="tiny" href="#refunds">Refunds</a>
+      </div>
+      <p class="tiny">We are not affiliated with TikTok or Instagram. All trademarks are property of their respective owners.</p>
+    </div>
+  </footer>
+
+  <!-- Simple legal stubs -->
+  <section id="privacy" class="tiny" style="padding:24px 24px 0">
+    <div class="container card">
+      <h2>Privacy</h2>
+      <p>We only use information you submit to respond to your inquiry and deliver services. We don’t sell your data.</p>
+    </div>
+  </section>
+  <section id="terms" class="tiny" style="padding:24px">
+    <div class="container card">
+      <h2>Terms</h2>
+      <p>Scopes, timelines, and deliverables are defined during consultation. Creative work is provided as digital deliverables.</p>
+    </div>
+  </section>
+  <section id="refunds" class="tiny" style="padding:0 24px 56px">
+    <div class="container card">
+      <h2>Refunds</h2>
+      <p>Audit services are non-refundable once delivered. If you’re unhappy, we’ll revise within the agreed scope.</p>
+    </div>
+  </section>
+
+  <!-- Payment: opens your Square Checkout in a new tab after submit on paid forms -->
+  <script>
+    (function(){
+      const SQUARE_LINK = 'https://square.link/u/jXWHy38J';
+      function attach(){
+        const forms = document.querySelectorAll('form[data-open-payment="true"]');
+        forms.forEach(f=>{
+          f.addEventListener('submit', function(){
+            setTimeout(()=>{ window.open(SQUARE_LINK, '_blank', 'noopener'); }, 400);
+          });
+        });
+      }
+      if(document.readyState === 'loading'){ document.addEventListener('DOMContentLoaded', attach); }
+      else { attach(); }
+    })();
+  </script>
+</body>
+</html>
