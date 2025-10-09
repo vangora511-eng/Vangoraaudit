@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VANGORA — Social Video + Audit Services</title>
+  <meta name="description" content="Short-form that sells. TikTok & Instagram audits with a 30-day content plan, plus clean, conversion-ready websites." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://vangoraaudit.com" />
+
+  <!-- Social cards -->
+  <meta property="og:title" content="VANGORA — Social Video + Audit Services" />
+  <meta property="og:description" content="TikTok & Instagram audits + conversion-ready websites." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vangoraaudit.com" />
+  <meta property="og:image" content="/assets/og.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Favicon / App icons -->
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180" />
+
+  <style>
+    :root{ --bg:#ffffff; --text:#1f2937; --muted:#6b7280; --line:#e5e7eb;
+           --bronze:#cd7f32; --silver:#8F96A3; --gold:#f59e0b; --accent:#E11D48; --focus:#6366F1; }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0b0f14; --text:#d5dbe5; --muted:#a3adc2; --line:#263041; }
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    img{max-width:100%;height:auto;display:block}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1120px;margin-inline:auto;padding:24px}
+    .grid{display:grid;gap:24px}
+    @media(min-width:768px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+    header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:10;backdrop-filter:saturate(140%) blur(6px)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .nav a{padding:10px 12px;border-radius:10px}
+    .nav a:hover{background:color-mix(in oklab, var(--line) 25%, transparent)}
+    .brand img{height:44px}
+
+    .hero{padding:72px 0;border-bottom:1px solid var(--line)}
+    .hero-inner{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px}
+    .logo{width:min(420px,80vw)}
+    h1{margin:0;font-size:clamp(28px,3.5vw,40px);letter-spacing:.02em;color:var(--text)}
+
+    .btn{padding:12px 18px;border:1px solid var(--line);border-radius:999px;background:var(--bg);cursor:pointer}
+    .btn.primary{background:var(--accent);border-color:var(--accent);color:white}
+    .btn:active{transform:translateY(1px)}
+    .summary-btn{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border:1px solid var(--line);border-radius:999px;background:var(--bg)}
+    details[open] .summary-btn{background:color-mix(in oklab, var(--line) 15%, transparent)}
+
+    section{padding:56px 0}
+    h2{margin:0 0 18px;font-size:clamp(22px,3vw,28px);color:var(--text)}
+    section[id]{scroll-margin-top:90px}
+
+    .card{border:1px solid var(--line);border-radius:16px;padding:20px;background:var(--bg)}
+    .muted{font-size:14px;color:var(--muted)}
+    .tier{font-weight:700}
+    .bronze-text{color:var(--bronze)} .silver-text{color:var(--silver)} .gold-text{color:var(--gold)}
+
+    form{display:grid;gap:14px;max-width:640px}
+    label{display:block}
+    input,textarea,select{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg);color:var(--text)}
+    input[type="file"]{padding:8px}
+
+    .work-grid{display:grid;gap:16px}
+    @media(min-width:768px){.work-grid{grid-template-columns:repeat(3,1fr)}}
+    .work-item{border:1px solid var(--line);border-radius:14px;padding:14px}
+    .quote{border-left:3px solid var(--accent);padding-left:12px;margin:10px 0}
+
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);text-align:center}
+    .tiny{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <!-- Real file path; upload /assets/logo.svg -->
+        <img src="/assets/logo.svg" alt="VANGORA logo" onerror="this.outerHTML='<strong>VANGORA</strong>'" />
+      </div>
+      <nav aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#social">TikTok Audits</a>
+        <a href="#instagram">Instagram Audits</a>
+        <a href="#website">Websites</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <img class="logo" src="/assets/logo.svg" alt="VANGORA logo large" onerror="this.style.display='none'" />
+      <h1>Short-form that sells. TikTok & Instagram audits + conversion-ready websites.</h1>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+        <a href="#instagram"><button class="btn primary" type="button">Start an Audit</button></a>
+        <details>
+          <summary class="summary-btn">Book Free Consultation</summary>
+          <div style="padding:16px;max-width:720px;margin-inline:auto;text-align:left">
+            <!-- Web3Forms contact (no mailto) -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+              <input type="hidden" name="subject" value="VANGORA — Free Consultation Request" />
+              <input type="text" name="honeypot" style="display:none">
+              <label><input type="text" name="name" placeholder="Your name (required)" required /></label>
+              <label><input type="email" name="email" placeholder="Your email (required)" required /></label>
+              <label><input type="tel" name="phone" placeholder="Phone (required)" required /></label>
+              <label>
+                <select name="preferredContact">
+                  <option value="">Preferred contact method</option>
+                  <option>Email</option><option>Phone</option><option>Text</option>
+                </select>
+              </label>
+              <label><textarea name="message" rows="4" placeholder="What would you like help with?" required></textarea></label>
+              <button class="btn" type="submit">Send Consultation Request</button>
+              <p class="muted">We’ll call/text you within 24–48 hours.</p>
+            </form>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="grid grid-3">
+
+        <!-- Video Marketing (unchanged flow; inquiry) -->
+        <div id="video" class="card">
+          <strong>🎬 Video Marketing & Editing</strong>
+          <p>Upload your video(s)/images and describe what you want edited (transitions, captions, VO, music). <strong>Price based on scope.</strong></p>
+          <p class="muted"><em>Consultation is free.</em></p>
+          <details>
+            <summary>Start a Video Project</summary>
+            <div style="padding:16px">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+                <input type="hidden" name="subject" value="New Video Project Request" />
+                <input type="text" name="honeypot" style="display:none">
+                <label><input type="email" name="clientEmail" placeholder="Your email (required)" required /></label>
+                <label><textarea name="description" rows="4" placeholder="Describe the edit: trimming, transitions, captions, references, deadline (required)" required></textarea></label>
+                <label><input type="text" name="clientName" placeholder="Your name (required)" required /></label>
+                <label><input type="tel" name="clientPhone" placeholder="Phone (required)" required /></label>
+                <button class="btn" type="submit">✉️ Send Details</button>
+                <p class="muted">We’ll reply within 24–48 hours.</p>
+              </form>
+            </div>
+          </details>
+        </div>
+
+        <!-- TikTok Audit -->
+        <div id="social" class="card">
+          <strong>📱 TikTok Account Audit</strong>
+          <p>Pay first, then you’ll be redirected to submit your info. Delivery in 1–5 business days.</p>
+          <details>
+            <summary><span class="tier bronze-text">Starter — $75</span></summary>
+            <div style="padding:16px">
+              <ul class="muted"><li>Profile/bio optimization</li><li>Top 10 video review</li><li>Engagement breakdown</li><li>5 tailored tips</li></ul>
+              <button class="btn primary" type="button" onclick="beginCheckout('tiktok','starter')">Pay $75 & Continue</button>
+            </div>
+          </details>
+          <details>
+            <summary><span class="tier silver-text">Professional — $150</span></summary>
+            <div style="padding:16px">
+              <ul class="muted"><li>30-video analysis</li><li>Hashtag audit</li><li>Competitor bench</li><li>30-day plan</li></ul>
+              <button class="btn primary" type="button" onclick="beginCheckout('tiktok','professional')">Pay $150 & Continue</button>
+            </div>
+          </details>
+          <details>
+            <summary><span class="tier gold-text">Premium — $230</span></summary>
+            <div style="padding:16px">
+              <ul class="muted"><li>90-day deep dive</li><li>Funnel report</li><li>Retention & CTA</li><li>90-day roadmap</li></ul>
+              <button class="btn primary" type="button" onclick="beginCheckout('tiktok','premium')">Pay $230 & Continue</button>
+            </div>
+          </details>
+          <p class="muted">You’ll be redirected back here to complete your intake after payment.</p>
+        </div>
+
+        <!-- Instagram Audit -->
+        <div id="instagram" class="card">
+          <strong>📸 Instagram Account Audit</strong>
+          <p>Pay first, then you’ll be redirected to submit your info. Delivery in 1–5 business days.</p>
+          <details>
+            <summary><span class="tier bronze-text">Starter — $75</span></summary>
+            <div style="padding:16px">
+              <ul class="muted"><li>Profile/bio optimization</li><li>Top 10 post review</li><li>Engagement breakdown</li><li>5 tailored tips</li></ul>
+              <button class="btn primary" type="button" onclick="beginCheckout('instagram','starter')">Pay $75 & Continue</button>
+            </div>
+          </details>
+          <details>
+            <summary><span class="tier silver-text">Professional — $150</span></summary>
+            <div style="padding:16px">
+              <ul class="muted"><li>30-post analysis</li><li>Hashtag audit</li><li>Competitor bench</li><li>30-day plan</li></ul>
+              <button class="btn primary" type="button" onclick="beginCheckout('instagram','professional')">Pay $150 & Continue</button>
+            </div>
+          </details>
+          <details>
+            <summary><span class="tier gold-text">Premium — $230</span></summary>
+            <div style="padding:16px">
+              <ul class="muted"><li>90-day deep dive</li><li>Funnel report</li><li>Retention & CTA</li><li>90-day roadmap</li></ul>
+              <button class="btn primary" type="button" onclick="beginCheckout('instagram','premium')">Pay $230 & Continue</button>
+            </div>
+          </details>
+          <p class="muted">You’ll be redirected back here to complete your intake after payment.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work">
+    <div class="container">
+      <h2>Recent Work</h2>
+      <div class="work-grid">
+        <div class="work-item"><strong>diycoach.co</strong><p>Audit + content map. “Trusted and partnered with diycoach.co.”</p></div>
+        <div class="work-item"><strong>Brand X</strong><p>IG audit → +38% engagement in 30 days.</p></div>
+        <div class="work-item"><strong>Creator Y</strong><p>TikTok hooks + edits → 3x average views.</p></div>
+      </div>
+      <div class="quote">“VANGORA gave us a clear plan and our content finally clicks.” — Client</div>
+    </div>
+  </section>
+
+  <!-- Website Building -->
+  <section id="website">
+    <div class="container">
+      <h2>💻 Website Building</h2>
+      <p class="muted">Consultation is free. Phone is required so we can align on scope and a fair price.</p>
+      <div class="card">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Website Build Request" />
+          <input type="text" name="honeypot" style="display:none">
+          <details open>
+            <summary><span class="tier bronze-text">Starter — $300–$600</span></summary>
+            <div style="padding:12px 0">
+              <textarea name="starterDetails" rows="3" placeholder="Purpose, audience, style"></textarea>
+              <input type="text" name="starterColors" placeholder="Preferred colors (e.g., baby blue, white, metallic silver)" />
+              <input type="text" name="starterPages" placeholder="Pages (e.g., Home, About, Contact)" />
+            </div>
+          </details>
+          <details>
+            <summary><span class="tier silver-text">Professional — $800–$1,500</span></summary>
+            <div style="padding:12px 0">
+              <textarea name="proDetails" rows="3" placeholder="Purpose, theme, layout ideas"></textarea>
+              <input type="text" name="proPages" placeholder="Pages (e.g., Home, Services, About, Contact, Blog)" />
+            </div>
+          </details>
+          <details>
+            <summary><span class="tier gold-text">Business / E-commerce — $2,000–$3,500</span></summary>
+            <div style="padding:12px 0">
+              <textarea name="ecomDetails" rows="3" placeholder="Store/booking info, catalog size, payment needs"></textarea>
+              <input type="text" name="ecomProducts" placeholder="# of products/services (estimate)" />
+            </div>
+          </details>
+          <details>
+            <summary><strong>Premium Custom — $4,000–$6,000+</strong></summary>
+            <div style="padding:12px 0">
+              <textarea name="premiumDetails" rows="3" placeholder="Animations, blog, SEO, automations…"></textarea>
+            </div>
+          </details>
+          <input type="email" name="clientEmail" placeholder="Your email (required)" required />
+          <input type="text" name="clientName" placeholder="Your name (required)" required />
+          <input type="tel" name="clientPhone" placeholder="Phone (required)" required />
+          <input type="text" name="deadline" placeholder="Deadline / timeline (optional)" />
+          <input type="text" name="budget" placeholder="Budget range (optional)" />
+          <button class="btn primary" type="submit">🧩 Submit Website Request</button>
+          <p class="muted">Thank you for choosing VANGORA — we’ll call you within 24–48 hours.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="card">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="VANGORA — New Contact" />
+          <input type="text" name="honeypot" style="display:none">
+          <input type="text" name="name" placeholder="Name*" required />
+          <input type="email" name="email" placeholder="Email*" required />
+          <input type="tel" name="phone" placeholder="Phone (optional)" />
+          <textarea name="message" rows="5" placeholder="Tell us about your project*" required></textarea>
+          <button class="btn" type="submit">Send</button>
+        </form>
+        <p class="muted" style="margin-top:8px">Or email us: <a href="mailto:vangora511@gmail.com">vangora511@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      © 2025 VANGORA · All Rights Reserved · <a class="tiny" href="/sitemap.xml">sitemap</a> · <a class="tiny" href="/robots.txt">robots</a>
+      <p class="tiny">We are not affiliated with TikTok or Instagram. Trademarks are property of their owners.</p>
+    </div>
+  </footer>
+
+  <!-- Checkout mapping + redirect -->
+  <script>
+    // Your 3 Square links (used for both IG & TikTok tiers)
+    const SQUARE_LINKS = {
+      starter: 'https://square.link/u/ulE46vRT',       // $75
+      professional: 'https://square.link/u/FytsC1s6',  // $150
+      premium: 'https://square.link/u/O9Y49S3U'        // $230
+    };
+    // Square "Return to Website" should be set to: https://YOURDOMAIN/thank-you.html
+
+    function beginCheckout(service, tier){
+      // Persist selection; thank-you page reads these and shows the correct form
+      localStorage.setItem('paidService', service);       // 'tiktok' or 'instagram'
+      localStorage.setItem('paidTier', tier);             // 'starter' | 'professional' | 'premium'
+      // Send user to Square checkout
+      window.location.href = SQUARE_LINKS[tier];
+    }
+  </script>
+</body>
+</html>
