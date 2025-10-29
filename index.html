@@ -11,7 +11,7 @@
 
   <!-- Social cards -->
   <meta property="og:title" content="VANGORA — Audits, Video Edits & Websites">
-  <meta property="og:description" content="48h AI Audits. Video edits that keep people watching. Websites that convert.">
+  <meta property="og:description" content="48h AI Audits. Video edits that hold attention. Websites that convert.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vangoraaudit.com">
   <meta property="og:image" content="https://vangoraaudit.com/og-card.jpg">
@@ -20,7 +20,7 @@
   <style>
     :root{
       --bg:#0B0F14; --panel:#0f1520; --ink:#e7edf8; --muted:#a6b0c2; --line:#1f2a3b;
-      --gold:#e7c875; --blue:#8ED0FF; --ok:#22c55e; --bad:#ef4444;
+      --gold:#e7c875; --blue:#8ED0FF;
     }
     *{box-sizing:border-box}
     html{scroll-behavior:smooth}
@@ -37,7 +37,7 @@
     .brandtext{font-weight:800;letter-spacing:.12em;color:var(--gold)}
     .hero{padding:64px 0;border-bottom:1px solid var(--line);text-align:center}
     .hero h1{margin:14px 0 6px;font-size:clamp(26px,3.2vw,38px);color:#d7e1f2}
-    .sub{opacity:.90}
+    .sub{opacity:.95}
     .badge{display:inline-block;font-size:12px;border:1px solid var(--line);padding:4px 10px;border-radius:999px;color:#cfe1ff}
     .notice{font-size:12px;color:#9fb1cc;margin-top:8px}
     .cta-row{margin-top:14px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
@@ -77,13 +77,9 @@
 
   <!-- Analytics (swap domain / GA4 ID if used) -->
   <script defer data-domain="vangoraaudit.com" src="https://plausible.io/js/script.js"></script>
-  <script>
-    // Optional GA4
-    // window.dataLayer = window.dataLayer || [];
-    // function gtag(){dataLayer.push(arguments);}
-    // gtag('js', new Date());
-    // gtag('config', 'G-XXXXXXX');
-  </script>
+  <!-- Optional GA4:
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+  -->
 </head>
 <body>
   <!-- Header -->
@@ -114,7 +110,7 @@
       <h1 id="hero-title">Get a 48-hour AI Audit that shows exactly why your videos aren’t converting — and how to fix it this week.</h1>
       <p class="sub">Real proof. Clear steps. Money-back if we miss the 48h window.</p>
       <div class="cta-row">
-        <a class="btn" href="#tiktok" data-evt="cta_primary">Get My TikTok Audit — $149</a>
+        <a class="btn" href="#tiktok" data-evt="cta_primary">Get My TikTok Audit</a>
         <a class="ghost" href="#services" data-evt="cta_secondary">See all services</a>
       </div>
       <p class="notice">Avg client: <strong>+64% engagement</strong> in 14 days • Replies within <strong>24h</strong></p>
@@ -133,7 +129,7 @@
         </div>
         <div class="card">
           <strong>🎬 Video Editing Packages</strong>
-          <p class="muted">Short-form edits that hold attention, with captions, hooks, and motion accents.</p>
+          <p class="muted">Short-form edits that keep attention: captions, hooks, motion accents.</p>
           <a class="btn" href="#video" data-evt="svc_video">See packages</a>
         </div>
         <div class="card">
@@ -145,7 +141,7 @@
     </div>
   </section>
 
-  <!-- TikTok Audits (Collapsed tiers) -->
+  <!-- TikTok Audits (Collapsible) -->
   <section id="tiktok" aria-labelledby="tiktok-title">
     <div class="container">
       <h2 id="tiktok-title">TikTok Account Audit</h2>
@@ -158,61 +154,114 @@
           </summary>
 
           <div class="grid" style="padding:18px 20px">
-            <!-- Core Audit $149 -->
+            <!-- Starter $75 -->
             <div class="card" itemscope itemtype="https://schema.org/Service">
-              <strong itemprop="name">Core Audit — <span class="price">$149</span></strong>
-              <meta itemprop="serviceType" content="TikTok Core Audit"/>
+              <strong itemprop="name">Starter — <span class="price">$75</span></strong>
+              <meta itemprop="serviceType" content="TikTok Audit Starter"/>
               <ul class="feats muted">
-                <li>Review of last 30 posts (hooks, retention, CTR)</li>
-                <li>10-step fix-list you can apply in a weekend</li>
-                <li>3 ready-to-use hooks + captions & hashtags</li>
-                <li>48-hour delivery guarantee</li>
+                <li>Profile & bio optimization</li>
+                <li>Top 10 content review</li>
+                <li>5 actionable growth tips</li>
+                <li>Caption & hashtag notes</li>
+                <li>48–72 hour turnaround</li>
               </ul>
-              <p><a class="btn" target="_blank" rel="noopener noreferrer" href="https://square.link/u/SQUARE_TIKTOK_CORE_149" data-evt="pay_tt_core">Get Core — $149</a></p>
+              <p>
+                <a class="btn" target="_blank" rel="noopener noreferrer"
+                   href="https://square.link/u/ulE46vRT"
+                   data-evt="pay_tt_starter">Pay $75</a>
+              </p>
             </div>
 
-            <!-- Growth Audit $249 -->
+            <!-- Professional $150 -->
             <div class="card" itemscope itemtype="https://schema.org/Service">
-              <strong itemprop="name">Growth Audit — <span class="price">$249</span></strong>
-              <meta itemprop="serviceType" content="TikTok Growth Audit"/>
+              <strong itemprop="name">Professional — <span class="price">$150</span></strong>
+              <meta itemprop="serviceType" content="TikTok Audit Professional"/>
               <ul class="feats muted">
-                <li>Everything in Core</li>
-                <li>Competitor benchmark + keyword/trend map</li>
-                <li>30-day content calendar with posting times</li>
-                <li>Loom walkthrough of your report</li>
+                <li><em>Everything in Starter, plus:</em></li>
+                <li>30-video content analysis</li>
+                <li>Competitor benchmarking</li>
+                <li>Niche & trend keyword map</li>
+                <li>30-day content calendar</li>
+                <li>Best time-to-post optimization</li>
               </ul>
-              <p><a class="btn" target="_blank" rel="noopener noreferrer" href="https://square.link/u/SQUARE_TIKTOK_GROWTH_249" data-evt="pay_tt_growth">Get Growth — $249</a></p>
+              <p>
+                <a class="btn" target="_blank" rel="noopener noreferrer"
+                   href="https://square.link/u/FytsC1s6"
+                   data-evt="pay_tt_professional">Pay $150</a>
+              </p>
             </div>
 
-            <!-- Pro + Call $399 -->
+            <!-- Premium $230 -->
             <div class="card" itemscope itemtype="https://schema.org/Service">
-              <strong itemprop="name">Pro + Call — <span class="price">$399</span></strong>
-              <meta itemprop="serviceType" content="TikTok Pro Audit with Call"/>
+              <strong itemprop="name">Premium — <span class="price">$230</span></strong>
+              <meta itemprop="serviceType" content="TikTok Audit Premium"/>
               <ul class="feats muted">
-                <li>Everything in Growth</li>
-                <li>45-minute strategy call</li>
-                <li>2-week priority feedback via email</li>
-                <li>Personalized growth KPI targets</li>
+                <li><em>Everything in Professional, plus:</em></li>
+                <li>90-day analytics report + KPI forecast</li>
+                <li>Audience persona & retention insights</li>
+                <li>Reputation/shadowban review</li>
+                <li>45-min strategy call</li>
+                <li>2 weeks priority feedback</li>
               </ul>
-              <p><a class="btn" target="_blank" rel="noopener noreferrer" href="https://square.link/u/SQUARE_TIKTOK_PRO_399" data-evt="pay_tt_pro">Get Pro — $399</a></p>
+              <p>
+                <a class="btn" target="_blank" rel="noopener noreferrer"
+                   href="https://square.link/u/O9Y49S3U"
+                   data-evt="pay_tt_premium">Pay $230</a>
+              </p>
             </div>
 
-            <p class="notice">After payment you’ll be redirected to a short intake on our <strong>Thank You</strong> page.</p>
+            <p class="notice">
+              After payment you’ll be redirected to our <strong>Thank You</strong> page (set this in Square → Online Checkout → each link → “After payment” URL).
+            </p>
           </div>
         </details>
       </div>
 
-      <div class="notice" style="margin-top:10px">Guarantee: If we can’t deliver your audit in <strong>48 hours</strong>, we’ll refund you 100%.</div>
+      <div class="notice" style="margin-top:10px">
+        Guarantee: If we can’t deliver your audit in <strong>48 hours</strong>, we’ll refund you 100%.
+      </div>
     </div>
   </section>
 
-  <!-- Video Edits (buttons only; intake on thank-you) -->
+  <!-- Instagram Audits (optional; uses same links for now) -->
+  <section id="instagram" aria-labelledby="ig-title">
+    <div class="container">
+      <h2 id="ig-title">Instagram Account Audit</h2>
+      <div class="card" style="padding:0">
+        <details>
+          <summary style="list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;padding:18px 20px;border-bottom:1px solid var(--line)">
+            <span><strong>Choose your tier</strong> <span class="muted">(tap to expand)</span></span>
+            <span aria-hidden>▾</span>
+          </summary>
+          <div class="grid" style="padding:18px 20px">
+            <div class="card">
+              <strong>Starter — <span class="price">$75</span></strong>
+              <ul class="feats muted"><li>Profile & bio + 10 posts review</li><li>5 growth tips</li><li>48–72h turnaround</li></ul>
+              <p><a class="btn" target="_blank" rel="noopener noreferrer" href="https://square.link/u/ulE46vRT">Pay $75</a></p>
+            </div>
+            <div class="card">
+              <strong>Professional — <span class="price">$150</span></strong>
+              <ul class="feats muted"><li>Everything in Starter</li><li>30-post analysis</li><li>30-day plan + timing</li></ul>
+              <p><a class="btn" target="_blank" rel="noopener noreferrer" href="https://square.link/u/FytsC1s6">Pay $150</a></p>
+            </div>
+            <div class="card">
+              <strong>Premium — <span class="price">$230</span></strong>
+              <ul class="feats muted"><li>Everything in Professional</li><li>90-day KPIs</li><li>45-min call + 2w support</li></ul>
+              <p><a class="btn" target="_blank" rel="noopener noreferrer" href="https://square.link/u/O9Y49S3U">Pay $230</a></p>
+            </div>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Edits (wire Square links later if you want) -->
   <section id="video" aria-labelledby="video-title">
     <div class="container">
       <h2 id="video-title">Video Editing Packages</h2>
       <div class="grid grid-3">
-        <div class="card" itemscope itemtype="https://schema.org/Service">
-          <strong itemprop="name">Basic — <span class="price">$299</span></strong>
+        <div class="card">
+          <strong>Basic — <span class="price">$299</span></strong>
           <ul class="feats muted">
             <li>4 short-form edits (15–30s)</li>
             <li>Captions + emoji highlights</li>
@@ -220,10 +269,11 @@
             <li>1 round of revisions</li>
             <li>5-day delivery</li>
           </ul>
-          <p><a class="btn" target="_blank" rel="noopener noreferrer" href="https://square.link/u/SQUARE_VIDEO_BASIC_299" data-evt="pay_video_basic">Pay $299</a></p>
+          <!-- Replace with your Square link if selling now -->
+          <p><a class="btn" target="_blank" rel="noopener noreferrer" href="#" aria-disabled="true">Pay $299</a></p>
         </div>
-        <div class="card" itemscope itemtype="https://schema.org/Service">
-          <strong itemprop="name">Pro — <span class="price">$599</span></strong>
+        <div class="card">
+          <strong>Pro — <span class="price">$599</span></strong>
           <ul class="feats muted">
             <li>10 short-form edits</li>
             <li>Brand kit (fonts/colors/logo)</li>
@@ -231,10 +281,10 @@
             <li>2 rounds of revisions</li>
             <li>Priority queue (3–5 days)</li>
           </ul>
-          <p><a class="btn" target="_blank" rel="noopener noreferrer" href="https://square.link/u/SQUARE_VIDEO_PRO_599" data-evt="pay_video_pro">Pay $599</a></p>
+          <p><a class="btn" target="_blank" rel="noopener noreferrer" href="#" aria-disabled="true">Pay $599</a></p>
         </div>
-        <div class="card" itemscope itemtype="https://schema.org/Service">
-          <strong itemprop="name">Growth — <span class="price">$999</span></strong>
+        <div class="card">
+          <strong>Growth — <span class="price">$999</span></strong>
           <ul class="feats muted">
             <li>20 short-form edits</li>
             <li>Script assistance + hooks</li>
@@ -242,14 +292,14 @@
             <li>Thumbnail frames</li>
             <li>2-week priority support</li>
           </ul>
-          <p><a class="btn" target="_blank" rel="noopener noreferrer" href="https://square.link/u/SQUARE_VIDEO_GROWTH_999" data-evt="pay_video_growth">Pay $999</a></p>
+          <p><a class="btn" target="_blank" rel="noopener noreferrer" href="#" aria-disabled="true">Pay $999</a></p>
         </div>
       </div>
-      <p class="notice">After payment you’ll be redirected to <strong>/thank-you.html</strong> to submit links and notes.</p>
+      <p class="notice">Want these live? Send me your Square links and I’ll wire them in.</p>
     </div>
   </section>
 
-  <!-- Websites (kept as form) -->
+  <!-- Websites -->
   <section id="websites" aria-labelledby="web-title">
     <div class="container">
       <h2 id="web-title">Website Design & Build</h2>
@@ -362,12 +412,14 @@
       img.addEventListener('error', ()=> img.remove());
     })();
 
-    // Simple click logger (wire to your analytics if desired)
-    document.addEventListener('click', function(e){
-      const a = e.target.closest('[data-evt]');
-      if(!a) return;
-      // console.log('event:', a.getAttribute('data-evt'));
-    });
+    // Warn in console if any placeholder Square links remain
+    (function(){
+      var bad = [];
+      document.querySelectorAll('a[href*="square.link/u/"]').forEach(a=>{
+        if(/#|PUT_YOUR_|SQUARE_/.test(a.getAttribute('href'))) bad.push(a);
+      });
+      if (bad.length) console.warn("Replace placeholder Square links:", bad);
+    })();
   </script>
 
   <noscript>Your browser has JavaScript disabled. Forms still work, but analytics and minor UI enhancements are disabled.</noscript>
